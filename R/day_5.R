@@ -69,7 +69,7 @@ stacks <- matrix(
 
 
 # Now loop over the instructions
-for (i in 1:nrow(moves_df)) {
+for (i in seq_along(moves_df$amount)) {
   
   # Get the from stack
   from_stack <- stacks[moves_df$from[i],]
@@ -118,7 +118,7 @@ stacks <- matrix(
 
 # Use a similar for loop to before
 # Now loop over the instructions
-for (i in 1:nrow(moves_df)) {
+for (i in seq_along(moves_df$amount)) {
   
   # Get the from stack
   from_stack <- stacks[moves_df$from[i],]
